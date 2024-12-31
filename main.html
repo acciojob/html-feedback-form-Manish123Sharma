@@ -1,50 +1,41 @@
 <!DOCTYPE html>
-
 <html>
-
+ 
 <head>
 	<link rel="stylesheet" href="styles.css">
-	<title>Feedback Form</title>
 </head>
-
-<body>
-	<!-- the entire body must be written by student -->
-	<!-- <h3>Feedback Form</h3>
-	<form method ="post">
-		<label for ="name">Name</label>
-		<input id= "name" type ="text" minlength ="3" maxlength ="50" required>
-
-		<label for="portfolio">Portfolio URL:</label>
-		<input id ="portfolio" type ="url" required>
-
-		<label for = "favColor">Color</label>
-		<input id ="favColor" type ="color">
-
-		<label for = "likeness">Likeness</label>
-		<input id ="likeness" type ="Range" min="1" max="100">
-
-		<button type="submit">Submit</button>
-	</form> -->
-	 <h1>Feedback Form</h1>
  
-    <form action="submit_form.php" method="POST">
+<body>
+    <h1>Feedback Form</h1>
+ 
+    <!-- Feedback Form -->
+    <form action="/submit" method="POST">
+ 
+        <!-- Name Field -->
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" minlength="3" maxlength="50" required>
+        <br><br>
  
-        <label for="portfolio">Portfolio:</label>
+        <!-- Portfolio URL Field -->
+        <label for="portfolio">Portfolio URL:</label>
         <input type="url" id="portfolio" name="portfolio" required>
+        <br><br>
  
+        <!-- Favorite Color Field -->
         <label for="favColor">Favorite Color:</label>
-        <input type="color" id="favColor" name="favColor">
+        <input type="color" id="favColor" name="favColor" required>
+        <br><br>
  
-        <label for="likeness">Likeness:</label>
-        <input type="range" id="likeness" name="likeness" min="1" max="100">
+        <!-- Likeness Field -->
+        <label for="likeness">Likeness (1-100):</label>
+        <input type="range" id="likeness" name="likeness" min="1" max="100" required>
+        <br><br>
  
-        <input type="submit" value="Submit">
+        <!-- Submit Button -->
+        <button type="submit">Submit Feedback</button>
     </form>
-    <script type="text/javascript" src="./script.js">
-</script>
-
+ 
+    <script type="text/javascript" src="./script.js"></script>
 </body>
-
+ 
 </html>
